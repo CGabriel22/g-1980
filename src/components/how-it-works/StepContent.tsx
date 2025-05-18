@@ -27,7 +27,7 @@ const StepContent: React.FC<StepContentProps> = ({
     <motion.div 
       className={`relative px-4 py-3 cursor-pointer transition-all duration-300 w-full ${
         isActive 
-          ? 'bg-white border-l-4 border-convrt-purple rounded-r-lg' 
+          ? 'bg-white border-l-4 border-jus-purple rounded-r-lg' 
           : 'bg-gray-50/60 border-l-4 border-gray-200 rounded-r-lg hover:bg-gray-50/80'
       }`}
       onClick={onClick}
@@ -35,7 +35,7 @@ const StepContent: React.FC<StepContentProps> = ({
       animate={{ 
         opacity: 1, 
         x: 0,
-        borderColor: isActive ? '#6936F5' : '#e5e7eb',
+        borderColor: isActive ? '#422D6D' : '#e5e7eb',
         backgroundColor: isActive ? 'white' : '#f9fafb'
       }}
       transition={{ duration: 0.3 }}
@@ -46,12 +46,12 @@ const StepContent: React.FC<StepContentProps> = ({
           <motion.div 
             className={`w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm ${
               isActive 
-                ? 'bg-convrt-purple text-white' 
-                : 'bg-gray-200 text-convrt-dark-blue'
+                ? 'bg-jus-purple text-white' 
+                : 'bg-gray-200 text-jus-purple'
             }`}
             animate={{ 
-              backgroundColor: isActive ? '#6936F5' : '#e5e7eb',
-              color: isActive ? 'white' : '#222233'
+              backgroundColor: isActive ? '#422D6D' : '#e5e7eb',
+              color: isActive ? 'white' : '#422D6D'
             }}
             transition={{ duration: 0.3 }}
           >
@@ -60,26 +60,26 @@ const StepContent: React.FC<StepContentProps> = ({
         </div>
         
         <div className="flex-1">
-          <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-convrt-purple/10 text-convrt-purple mb-1">
+          <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-jus-purple/10 text-jus-purple mb-1">
             {icon}
           </div>
           
-          <h3 className="text-base font-bold text-convrt-dark-blue mb-1">
+          <h3 className="text-base font-bold text-jus-purple mb-1">
             {title}
           </h3>
           
-          <p className="text-sm text-convrt-dark-blue/80 mb-2 line-clamp-2">
+          <p className="text-sm text-jus-purple/80 mb-2 line-clamp-2">
             {description}
           </p>
           
           {isActive && (
             <motion.div 
-              className="bg-white rounded-md p-2 text-xs text-convrt-dark-blue/90 border border-gray-100"
+              className="bg-white rounded-md p-2 text-xs text-jus-purple/90 border border-gray-100"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.1 }}
             >
-              <span className="font-medium text-convrt-dark-blue">{highlightText}</span> {highlightDetails}
+              <span className="font-medium text-jus-purple">{highlightText}</span> {highlightDetails}
             </motion.div>
           )}
         </div>

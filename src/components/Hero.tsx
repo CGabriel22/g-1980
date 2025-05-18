@@ -1,5 +1,5 @@
 
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import AnimatedBackground from './AnimatedBackground';
 import { ArrowRight, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -9,6 +9,47 @@ import StatsSection from './hero/StatsSection';
 const Hero = () => {
   const statsRef = useRef<HTMLDivElement>(null);
   const demoRef = useRef<HTMLDivElement>(null);
+  
+  // States for typing animation
+  const [displayText, setDisplayText] = useState("");
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+  
+  const phrases = [
+    "com mais clientes",
+    "mais agil",
+    "no futuro"
+  ];
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const currentPhrase = phrases[currentTextIndex];
+      
+      if (isDeleting) {
+        setDisplayText(currentPhrase.substring(0, displayText.length - 1));
+        setTypingSpeed(50); // Faster when deleting
+      } else {
+        setDisplayText(currentPhrase.substring(0, displayText.length + 1));
+        setTypingSpeed(150); // Normal speed when typing
+      }
+      
+      // If we've fully typed the phrase
+      if (!isDeleting && displayText === currentPhrase) {
+        setIsDeleting(true);
+        setTypingSpeed(1500); // Pause at the end of typing
+      }
+      
+      // If we've deleted the phrase
+      if (isDeleting && displayText === "") {
+        setIsDeleting(false);
+        setCurrentTextIndex((currentTextIndex + 1) % phrases.length);
+        setTypingSpeed(500); // Pause before typing next phrase
+      }
+    }, typingSpeed);
+    
+    return () => clearTimeout(timer);
+  }, [displayText, currentTextIndex, isDeleting]);
 
   // Animation variants
   const containerVariants = {
@@ -44,24 +85,24 @@ const Hero = () => {
         >
           <motion.div 
             variants={itemVariants}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/10 text-convrt-purple mb-6"
+            className="inline-flex items-center px-4 py-2 rounded-full bg-jus-purple/10 text-jus-purple mb-6"
           >
             <Zap className="w-4 h-4 mr-2" />
-            <span className="text-sm font-medium font-inter tracking-wide">The First AI Organic Outbound Platform</span>
+            <span className="text-sm font-medium font-inter tracking-wide">Inteligência Artificial com Integração, Automação e Elegância</span>
           </motion.div>
           
           <motion.h1 
             variants={itemVariants}
-            className="font-inter font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-convrt-dark-blue leading-[1.1]"
+            className="font-inter font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-jus-purple leading-[1.1]"
           >
-            From <span className="text-[#EA384C] font-extrabold">Ignored</span> to <span className="text-[#6936F5] font-extrabold">Influential</span>
+            O seu <span className="text-[#FFC300] font-extrabold">escritório</span> <span className="text-[#422D6D] font-extrabold">{displayText}</span>
           </motion.h1>
           
           <motion.p 
             variants={itemVariants}
-            className="font-inter text-xl text-convrt-dark-blue/80 max-w-3xl mx-auto mb-8 leading-relaxed"
+            className="font-inter text-xl text-jus-purple/80 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            AI that makes buyers trust you, so you win more deals
+            A tecnologia de amanhã, no seu escritório hoje! Alta performance acessível para negócios de todos os tamanhos
           </motion.p>
           
           <motion.div 
@@ -69,11 +110,11 @@ const Hero = () => {
             className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16"
           >
             <a href="#cta" className="button-primary flex items-center group font-inter font-medium">
-              Get Started
+              Começar Agora
               <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a href="#how-it-works" className="button-outline font-inter">
-              See How It Works
+              Como Funciona
             </a>
           </motion.div>
           

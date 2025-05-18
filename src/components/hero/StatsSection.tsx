@@ -40,24 +40,24 @@ const StatsSection: React.FC<StatsSectionProps> = ({ statsRef }) => {
     >
       <motion.div variants={itemVariants}>
         <StatCard 
-          value="15x" 
-          description="Higher Conversion Rates" 
+          value="70%" 
+          description="Mais Produtividade" 
           icon={<TrendingUp className="w-8 h-8" />} 
         />
       </motion.div>
       
       <motion.div variants={itemVariants}>
         <StatCard 
-          value="80%" 
-          description="Less Prospecting Time" 
+          value="85%" 
+          description="Menos Tempo com Burocracia" 
           icon={<BarChart2 className="w-8 h-8" />} 
         />
       </motion.div>
       
       <motion.div variants={itemVariants}>
         <StatCard 
-          value="78%" 
-          description="Sales Outperformance" 
+          value="99%" 
+          description="Índice de Satisfação" 
           icon={<Award className="w-8 h-8" />} 
         />
       </motion.div>

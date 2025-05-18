@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
@@ -74,19 +75,19 @@
   }
   
   .glass-dark {
-    @apply bg-convrt-dark-blue/70 backdrop-blur-lg border border-white/10 rounded-2xl;
+    @apply bg-jus-dark-purple/70 backdrop-blur-lg border border-white/10 rounded-2xl;
   }
   
   .button-primary {
-    @apply bg-convrt-purple text-white font-semibold py-3 px-6 rounded-lg transition-all hover:bg-convrt-purple-hover hover:shadow-lg hover:shadow-convrt-purple/20 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+    @apply bg-jus-purple text-white font-semibold py-3 px-6 rounded-lg transition-all hover:bg-jus-purple-hover hover:shadow-lg hover:shadow-jus-purple/20 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
   }
   
   .button-secondary {
-    @apply bg-convrt-dark-blue text-white font-semibold py-3 px-6 rounded-lg transition-all hover:shadow-lg hover:shadow-convrt-dark-blue/20 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+    @apply bg-jus-dark-purple text-white font-semibold py-3 px-6 rounded-lg transition-all hover:shadow-lg hover:shadow-jus-dark-purple/20 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
   }
   
   .button-outline {
-    @apply border border-gray-300 bg-white/50 backdrop-blur-sm text-convrt-dark-blue font-medium py-3 px-6 rounded-lg transition-all hover:bg-convrt-light-gray hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+    @apply border border-gray-300 bg-white/50 backdrop-blur-sm text-jus-dark-purple font-medium py-3 px-6 rounded-lg transition-all hover:bg-jus-light-gray hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
   }
   
   .heading-xl {
@@ -110,15 +111,15 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-convrt-purple via-convrt-purple-light to-convrt-purple bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-jus-purple via-jus-purple-light to-jus-purple bg-clip-text text-transparent;
   }
   
   .section-tag {
-    @apply inline-flex items-center px-3 py-1 rounded-full bg-convrt-purple/5 text-convrt-purple text-sm font-medium mb-4;
+    @apply inline-flex items-center px-3 py-1 rounded-full bg-jus-purple/5 text-jus-purple text-sm font-medium mb-4;
   }
   
   .feature-card {
-    @apply relative p-6 rounded-2xl bg-white border border-convrt-light-gray/60 transition-all duration-300 hover:shadow-xl hover:shadow-convrt-purple/5 hover:border-convrt-purple/20 hover:-translate-y-1;
+    @apply relative p-6 rounded-2xl bg-white border border-jus-light-gray/60 transition-all duration-300 hover:shadow-xl hover:shadow-jus-purple/5 hover:border-jus-purple/20 hover:-translate-y-1;
   }
   
   .animate-delay-100 {
@@ -179,6 +180,15 @@
     background-image: linear-gradient(to right, rgb(226 232 240 / 10%) 1px, transparent 1px),
                       linear-gradient(to bottom, rgb(226 232 240 / 10%) 1px, transparent 1px);
   }
+  
+  .typing-animation {
+    border-right: 2px solid #422D6D;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    animation: typing 5s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+  }
 }
 
 @keyframes fadeIn {
@@ -209,5 +219,23 @@
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes typing {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #422D6D;
   }
 }

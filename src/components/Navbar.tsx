@@ -29,8 +29,8 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/ce207080-f6c2-430d-9621-79d32ab08655.png" 
-              alt="Convrt.ai Logo" 
+              src="/lovable-uploads/cf51e25b-f234-4ed6-aec9-a8a7fdf35aef.png" 
+              alt="Jus Digital Logo" 
               className="h-8 md:h-10"
             />
           </a>
@@ -38,26 +38,26 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            How It Works
+          <a href="#how-it-works" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
+            Como Funciona
           </a>
-          <a href="#testimonials" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            Case Studies
+          <a href="#testimonials" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
+            Casos de Sucesso
           </a>
-          <a href="#product" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            Product
+          <a href="#product" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
+            Produto
           </a>
-          <a href="#pricing" className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors">
-            Pricing
+          <a href="#pricing" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
+            Preços
           </a>
           <a href="#cta" className="button-primary">
-            Get Started
+            Começar Agora
           </a>
         </div>
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-convrt-dark-blue" 
+          className="md:hidden text-jus-purple" 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -70,38 +70,38 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <a 
               href="#how-it-works" 
-              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
+              className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              How It Works
+              Como Funciona
             </a>
             <a 
               href="#testimonials" 
-              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
+              className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Case Studies
+              Casos de Sucesso
             </a>
             <a 
               href="#product" 
-              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
+              className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Product
+              Produto
             </a>
             <a 
               href="#pricing" 
-              className="text-convrt-dark-blue/80 hover:text-convrt-dark-blue font-medium transition-colors"
+              className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Pricing
+              Preços
             </a>
             <a 
               href="#cta" 
               className="button-primary w-full text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Get Started
+              Começar Agora
             </a>
           </div>
         </div>

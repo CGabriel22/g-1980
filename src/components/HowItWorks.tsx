@@ -7,33 +7,33 @@ import { motion } from 'framer-motion';
 const HowItWorks = () => {
   const [activeStep, setActiveStep] = useState(1);
 
-  // Steps data
+  // Steps data for Ju - AI assistant
   const steps = [
     {
       id: 1,
       icon: <Target className="w-4 h-4" />,
-      title: "AI Identifies Where Your Buyers Engage",
-      description: "Our AI scans social media to find where your target audience is most active, identifying the exact channels, topics, and content they engage with.",
-      highlightText: "AI identifies:",
-      highlightDetails: "Relevant conversations, active communities, and engagement opportunities",
+      title: "Ju Atende Seus Clientes Pelo WhatsApp",
+      description: "Nossa super-assistente atende seus clientes de forma humanizada e personalizada, seguindo exatamente o seu modelo e estratégia de atendimento.",
+      highlightText: "Ju automatiza:",
+      highlightDetails: "Atendimento 24/7, respostas personalizadas e follow-ups automáticos",
       gifUrl: "/lovable-uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png"
     },
     {
       id: 2,
       icon: <Users className="w-4 h-4" />,
-      title: "AI Auto-Warms & Builds Trust",
-      description: "Convrt creates meaningful touchpoints that position you as a trusted advisor by engaging with prospects' content and contributing value.",
-      highlightText: "AI automates:",
-      highlightDetails: "Targeted comments, relevant reactions, and personalized interactions",
+      title: "Ju Organiza Sua Agenda e Processos",
+      description: "A Ju marca reuniões automaticamente no Google Agenda, resume casos complexos e mantém todos os processos organizados.",
+      highlightText: "Ju gerencia:",
+      highlightDetails: "Agendamentos, resumos de casos e organização processual",
       gifUrl: "https://api.microlink.io?url=https%3A%2F%2Fgiphy.com%2Fgifs%2Frevolutioncomedy-handshake-revolutioncomedy-icommitcombustion-kFHbqSdogIS0qtX6Pf&embed=true&screenshot=true&meta=false"
     },
     {
       id: 3,
       icon: <LineChart className="w-4 h-4" />,
-      title: "AI Converts Warm Leads Into Pipeline",
-      description: "With pre-established trust, your outreach achieves 15x higher conversion rates, turning social connections into qualified leads and deals.",
-      highlightText: "AI delivers:",
-      highlightDetails: "Warmed leads, engagement analytics, and conversion opportunities",
+      title: "Ju Potencializa Sua Produtividade",
+      description: "Com a Ju, seu escritório aumenta a produtividade, automatiza tarefas repetitivas e permite que você foque no que faz de melhor: advogar.",
+      highlightText: "Ju entrega:",
+      highlightDetails: "Aumento de produtividade, redução de erros e foco estratégico",
       gifUrl: "https://api.microlink.io?url=https%3A%2F%2Fgiphy.com%2Fgifs%2Fchart-jtECu4TAPnhbGv2iwx&embed=true&screenshot=true&meta=false"
     }
   ];
@@ -47,13 +47,13 @@ const HowItWorks = () => {
       <div className="container-section py-4">
         <div className="max-w-3xl mx-auto text-center mb-6">
           <div className="section-tag">
-            From Ignored to Trusted
+            Transformação Digital para Escritórios
           </div>
-          <h2 className="heading-lg text-convrt-dark-blue mb-4">
-            How <span className="gradient-text">Convrt.ai</span> Works in 3 Steps
+          <h2 className="heading-lg text-jus-purple mb-4">
+            Conheça <span className="gradient-text">Ju</span> - A Super-Assistente do Seu Escritório
           </h2>
-          <p className="text-convrt-dark-blue/80 text-lg max-w-2xl mx-auto">
-            Our AI-driven platform automates social engagement for your sales and GTM teams, transforming cold outreach into warm connections.
+          <p className="text-jus-purple/80 text-lg max-w-2xl mx-auto">
+            Nossa inteligência artificial foi desenvolvida especificamente para escritórios de advocacia, automatizando processos e elevando a produtividade da sua equipe.
           </p>
         </div>
         
