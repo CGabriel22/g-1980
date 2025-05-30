@@ -17,8 +17,8 @@ const Hero = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
   
   const phrases = [
-    "com mais clientes",
-    "mais agil",
+    "cresce",
+    "acelera",
     "no futuro"
   ];
   
@@ -88,7 +88,7 @@ const Hero = () => {
             className="inline-flex items-center px-4 py-2 rounded-full bg-jus-purple/10 text-jus-purple mb-6"
           >
             <Zap className="w-4 h-4 mr-2" />
-            <span className="text-sm font-medium font-inter tracking-wide">Inteligência Artificial com Integração, Automação e Elegância</span>
+            <span className="text-sm font-medium font-inter tracking-wide">Inteligência Artificial que integra, automatiza e transforma</span>
           </motion.div>
           
           <motion.h1 
@@ -102,7 +102,7 @@ const Hero = () => {
             variants={itemVariants}
             className="font-inter text-xl text-jus-purple/80 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            A tecnologia de amanhã, no seu escritório hoje! Alta performance acessível para negócios de todos os tamanhos
+            Soluções inteligentes que estão revolucionando escritórios de advocacia. Aumente sua produtividade, ganhe tempo e destaque-se em um mercado cada vez mais competitivo — comece agora e não fique para trás.
           </motion.p>
           
           <motion.div 
