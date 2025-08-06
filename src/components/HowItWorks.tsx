@@ -16,7 +16,7 @@ const HowItWorks = () => {
       description: "Nossa super-assistente atende seus clientes de forma humanizada e personalizada, seguindo exatamente o seu modelo e estratégia de atendimento.",
       highlightText: "Ju automatiza:",
       highlightDetails: "Atendimento 24/7, respostas personalizadas e follow-ups automáticos",
-      gifUrl: "/lovable-uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png"
+      gifUrl: "/lovable-uploads/64695da1-c7ef-42c4-84fc-f701b5d5e6ed.png"
     },
     {
       id: 2,

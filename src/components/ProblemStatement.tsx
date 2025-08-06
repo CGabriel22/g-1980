@@ -35,22 +35,22 @@ const ProblemStatement = () => {
           className="max-w-3xl mx-auto text-center mb-12"
         >
           <motion.div variants={itemVariants} className="section-tag">
-            Why Traditional Outbound Is Dead
+            Por que o atendimento tradicional está morto
           </motion.div>
           
           <motion.h2 
             variants={itemVariants}
             className="heading-lg text-convrt-dark-blue mb-6"
           >
-            Cold Outreach Doesn't Work Anymore. <br />
-            <span className="text-convrt-purple font-extrabold">AI Organic Outbound</span> Does.
+            A abordagem fria não funciona mais. <br />
+            <span className="text-convrt-purple font-extrabold">A IA orgânica de atendimento</span> funciona.
           </motion.h2>
           
           <motion.p 
             variants={itemVariants}
             className="text-convrt-dark-blue/80 text-lg mb-8 max-w-2xl mx-auto"
           >
-            The days of cold calls and emails are over. Today's buyers expect personalized engagement from people they trust. Convrt.ai puts you exactly where your buyers make decisions.
+            Os dias de atendimentos passivos acabaram. Hoje, os escritórios de advocacia precisam de uma abordagem proativa e personalizada para se destacar. A IA orgânica de atendimento é a solução que transforma o relacionamento com os clientes, construindo confiança desde o primeiro contato.
           </motion.p>
         </motion.div>
         
@@ -72,7 +72,7 @@ const ProblemStatement = () => {
             </div>
             
             <h3 className="heading-sm text-convrt-dark-blue mb-8 flex items-center">
-              Traditional Cold Outbound
+              Atendimento tradicional
             </h3>
             
             <ul className="space-y-6">
@@ -81,8 +81,8 @@ const ProblemStatement = () => {
                   <X className="w-4 h-4 text-[#EA384C]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">1% cold email response rates</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Millions of emails sent, almost all ignored</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Você perde 8 a cada 10 clientes</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Pesquisas mostram que mais de 2 minutos sem responder diminuem a taxa de conversão em até 80%</p>
                 </div>
               </li>
               
@@ -91,8 +91,8 @@ const ProblemStatement = () => {
                   <X className="w-4 h-4 text-[#EA384C]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">80% of calls screened out</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Decision makers don't take cold calls</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Dependência humana</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">O humor humano muda, em um dia cansado, o atendimento pode ser prejudicado</p>
                 </div>
               </li>
               
@@ -101,30 +101,12 @@ const ProblemStatement = () => {
                   <X className="w-4 h-4 text-[#EA384C]" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">No relationship before outreach</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Cold outreach feels impersonal and salesy</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Você limita seu próprio crescimento</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Você cria uma barreira, só podendo aumentar a prospecção de Leads se tiver mais time, o que custa caro</p>
                 </div>
               </li>
             </ul>
             
-            <div className="mt-12 grid grid-cols-3 gap-4">
-              <div className="aspect-square flex flex-col items-center justify-center bg-red-50 rounded-xl p-3">
-                <PhoneCall className="w-8 h-8 text-[#EA384C] mb-2" />
-                <div className="text-sm text-center text-[#EA384C] font-medium">Cold Calls</div>
-              </div>
-              
-              <div className="aspect-square flex flex-col items-center justify-center bg-red-50 rounded-xl p-3">
-                <Mail className="w-8 h-8 text-[#EA384C] mb-2" />
-                <div className="text-sm text-center text-[#EA384C] font-medium">Mass Emails</div>
-              </div>
-              
-              <div className="aspect-square flex flex-col items-center justify-center bg-red-50 rounded-xl p-3">
-                <MessageSquare className="w-8 h-8 text-[#EA384C] mb-2" />
-                <div className="text-sm text-center text-[#EA384C] font-medium">Generic Messages</div>
-              </div>
-            </div>
-            
-            <div className="absolute -bottom-1 left-0 right-0 h-1 bg-[#EA384C]"></div>
           </motion.div>
           
           {/* AI Organic Outbound - simplified box */}
@@ -138,8 +120,8 @@ const ProblemStatement = () => {
             </div>
             
             <h3 className="heading-sm text-convrt-dark-blue mb-8 flex items-center">
-              AI Organic Outbound
-              <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-convrt-purple/10 text-convrt-purple rounded-full">Convrt.ai</span>
+              Atendimento orgânico com IA
+              <span className="ml-2 px-2 py-0.5 text-xs font-medium bg-convrt-purple/10 text-convrt-purple rounded-full">Jus Digital</span>
             </h3>
             
             <ul className="space-y-6">
@@ -148,8 +130,8 @@ const ProblemStatement = () => {
                   <Check className="w-4 h-4 text-convrt-purple" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">15x higher conversion rates</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Build trust before you reach out</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Taxas de conversão 15x maiores</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Crie confiança desde o primeiro contato</p>
                 </div>
               </li>
               
@@ -158,8 +140,8 @@ const ProblemStatement = () => {
                   <Check className="w-4 h-4 text-convrt-purple" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">Key touchpoints and discussions</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Tracks the entire buyer's journey</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Maior agilidade e eficiência</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Deixe a Ju responder todos seus Leads instantâneamente, com a precisão que só uma maquina tem e com a humanidade que só a Ju tem!</p>
                 </div>
               </li>
               
@@ -168,30 +150,12 @@ const ProblemStatement = () => {
                   <Check className="w-4 h-4 text-convrt-purple" />
                 </div>
                 <div>
-                  <p className="font-semibold text-lg text-convrt-dark-blue">Fully automated growth hacking</p>
-                  <p className="text-convrt-dark-blue/70 mt-1">Enterprise-grade AI engagement</p>
+                  <p className="font-semibold text-lg text-convrt-dark-blue">Mais organização e controle</p>
+                  <p className="text-convrt-dark-blue/70 mt-1">Com a nossa plataforma de controle, você tem um CRM feito para advogados trabalharem com IA</p>
                 </div>
               </li>
             </ul>
             
-            <div className="mt-12 grid grid-cols-3 gap-4">
-              <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
-                <Users className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Engagement</div>
-              </div>
-              
-              <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
-                <Zap className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Trust Building</div>
-              </div>
-              
-              <div className="aspect-square flex flex-col items-center justify-center bg-convrt-purple/5 rounded-xl p-3">
-                <BarChart3 className="w-8 h-8 text-convrt-purple mb-2" />
-                <div className="text-sm text-center text-convrt-purple font-medium">Win More Deals</div>
-              </div>
-            </div>
-            
-            <div className="absolute -bottom-1 left-0 right-0 h-1 bg-convrt-purple"></div>
           </motion.div>
         </motion.div>
       </div>

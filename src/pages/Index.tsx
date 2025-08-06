@@ -42,7 +42,7 @@ const Index = () => {
         <Hero />
         <ProblemStatement />
         <HowItWorks />
-        <Testimonials />
+        {/* <Testimonials /> */}
         
         <section className="py-16 px-6" id="cta">
           <div className="container mx-auto max-w-5xl">
@@ -101,6 +101,7 @@ const Index = () => {
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
                     viewport={{ once: true }}
+                    onClick={() => window.location.href = 'https://wa.me/5588988651157'}
                     className="button-primary flex items-center text-lg px-8 py-4 shadow-lg shadow-jus-purple/10 hover:shadow-xl hover:shadow-jus-purple/20 rounded-full group"
                   >
                     Começar Grátis – Sem Cartão de Crédito

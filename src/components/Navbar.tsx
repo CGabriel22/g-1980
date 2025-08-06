@@ -31,7 +31,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/cf51e25b-f234-4ed6-aec9-a8a7fdf35aef.png" 
               alt="Jus Digital Logo" 
-              className="h-8 md:h-10"
+              className="h-4 md:h-6"
             />
           </a>
         </div>
@@ -41,15 +41,15 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
             Como Funciona
           </a>
-          <a href="#testimonials" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
+          {/* <a href="#testimonials" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
             Casos de Sucesso
-          </a>
-          <a href="#product" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
+          </a> */}
+          {/* <a href="#product" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
             Produto
           </a>
           <a href="#pricing" className="text-jus-purple/80 hover:text-jus-purple font-medium transition-colors">
             Preços
-          </a>
+          </a> */}
           <a href="#cta" className="button-primary">
             Começar Agora
           </a>
